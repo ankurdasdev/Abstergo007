@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{00pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Ankur Das} \\ \vspace{1pt} % 
+    Kolkata, West Bengal \\ \vspace{1pt} % [cite: 13, 33, 35]
+    \small \raisebox{-0.1\height}\faPhone\ +91 6200 4699 35 ~ \href{mailto:ankurdas.dev@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ankurdas.dev@gmail.com}} ~ % [cite: 2, 5]
+    \href{https://linkedin.com/in/ankurdasdev/}{\raisebox{-0.2\height}\faLinkedin\ \underline{in/ankurdasdev}}  ~ % [cite: 9]
+    \href{https://github.com/ankurdasdev/}{\raisebox{-0.2\height}\faGithub\ \underline{ankurdasdev}} % [cite: 9]
+    \vspace{-8pt}
+\end{center}
+
+\section{PROFESSIONAL SUMMARY}
+  %\vspace{-5pt} % Add negative space for sections not in the original template
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    Salesforce Certified Developer with 2+ years of experience at Deloitte, specializing in \textbf{Apex, Triggers, and LWC}. Proven ability to design and implement scalable business automation and custom applications across \textbf{Manufacturing, Sales, Service, and Data Clouds}. Skilled in building secure, high-performance integrations with \textbf{Q2SC, Heroku, AWS, and MuleSoft}, and optimizing end-to-end Salesforce solutions to enhance efficiency and user experience.}}
+  \end{itemize}
+  \vspace{-16pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Institute of Engineering \& Management, Kolkata (IEM)}{2019 -- 2023} % [cite: 31, 34]
+      {B.Tech in Computer Science \& Engineering}{Kolkata, West Bengal} % [cite: 32, 33]
+  \resumeSubHeadingListEnd
+\vspace{-5pt} % Shorten space after section
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Deloitte USI}{Sep 2023 -- Current} % [cite: 10, 11]
+      {Salesforce Developer}{Kolkata, West Bengal} % [cite: 11, 13]
+      \resumeItemListStart
+            \resumeItem{Worked on end-to-end implementation of a Salesforce Manufacturing Cloud project, covering design, development, testing, and deployment.}
+            \resumeItem {Designed and implemented complex Lightning Web Components (LWC) architectures to streamline user workflows and improve front-end performance across Manufacturing and Sales Clouds.}
+            \resumeItem {Developed REST API integrations between Salesforce and external platforms (Q2SC, Heroku, AWS, MuleSoft).}
+            \resumeItem {Implemented asynchronous communication using Platform Events for real-time, event-driven data synchronization.}
+            \resumeItem{Developed and deployed over 50 Apex classes and various asynchronous Apex solutions (Batch, Scheduled, Future, Queueable) to automate business processes and optimize backend data processing, reducing job run time by 20\%.}
+            \resumeItem{Built and optimized data processing pipelines in Salesforce Manufacturing Cloud using Data Processing Engine Tool, delivering manufacturing insights 2x faster than the legacy ETL system.}
+            % \resumeItem{Automated DPE job execution using a Scheduled Flow integrated with a Future Apex method and a REST API.}
+            \resumeItem{Built a custom LWC dashboard to provide real-time DPE job status, empowering business users to self-serve reports and reducing support tickets by 40\%.}
+            \resumeItem{Created and merged Flows (record-triggered, screen, and scheduled) to streamline business processes, reducing job run time by 25\% and improving overall automation efficiency.}
+            \resumeItem{Revamped Salesforce org security, fixing critical vulnerabilities across configuration and code layers; redesigned data access model (OWDs, Profiles, Permission Sets) and added security validations in Apex and LWCs, reducing potential data exposure by 60\%.}
+            \resumeItem{Led training sessions on Salesforce Manufacturing Cloud’s Data Processing Engine (DPE), equipping new team members with essential knowledge to accelerate onboarding and deliver value rapidly during a critical project phase.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GreyB}{Jan 2023 -- May 2023} % [cite: 25, 26]
+      {Salesforce Developer}{Kolkata, West Bengal} % [cite: 26, 35]
+      \resumeItemListStart
+        \resumeItem{Gained hands-on experience across Sales, Service, and Experience Clouds, working on real-world business implementations and configurations.} % [cite: 27]
+        \resumeItem{Developed Apex Classes, Triggers, and Test Classes to automate business processes and ensure code coverage best practices.} % [cite: 28]
+        \resumeItem{Built and tested REST API callouts from Salesforce to external systems to understand integration patterns and error handling.} % [cite: 29]
+        % \resumeItem{Built and tested REST API callouts from Salesforce to external systems to understand integration patterns and error handling.} % [cite: 29]
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Salesforce}{: Async Apex, Triggers, LWC, Flows, SOQL, Apex REST / SOAP Web Services, Administration tools} \\ % [cite: 14, 16, 18, 27, 45]
+     \textbf{Web}{: HTML, CSS, Javascript, React} \\ % [cite: 45]
+     \textbf{Tools \& Platforms}{: Git, Bitbucket, Jenkins, Github, CI/CD, VS Code, Salesforce CLI, Change Sets, Jira, Data Loader, Workbench, Postman, Tableau} % [cite: 40, 46, 47]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Salesforce Certified Platform Developer I \textbar{} Salesforce Certified AI Associate % 
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------AWARDS & ENGAGEMENTS-----------
+\section{Awards \& Engagements}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Outstanding Award (x1), Applause Award (x1) \& Spotlight Award (x2)}{} % [cite: 42]
+      {Deloitte USI}{}
+      \resumeItemListStart
+        \resumeItem{For extraordinary contribution to consistently delivering high-quality results in projects.} % [cite: 43]
+      \resumeItemListEnd
+    \resumeSubheading
+      {Trailblazer Community Groups}{} % [cite: 49]
+      {Active Participant}{}
+      \resumeItemListStart
+        \resumeItem{Participated in numerous local and virtual insightful meetup events.} % [cite: 49]
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+\end{document}
